@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="preto e magenta.png">
+  <title>y@@café</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body style="background-color: #6d5578;">
+    <img src="mascotinho.png" alt="logo">
+  <h3 class="title">
+    y@@café -
+    <a href="https://www.youtube.com/@SonicEuclidiano" target="_blank" rel="noopener">sonic euclidiano</a>
+  </h3>
+  <p>seja@@deus</p>
+  <input type="text" placeholder="digite help para saber como mudar de página" id="digite"> 
+
+  <script>
+  const campo = document.getElementById("digite");
+
+  campo.addEventListener("keydown", function (evento) {
+    if (evento.key === "Enter") {
+      const texto = campo.value.trim().toLowerCase();
+
+      if (texto === "help") {
+        window.location.href = "help.html";
+      }
+    }
+  });
+</script>
+</body>
+</html>
